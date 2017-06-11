@@ -275,10 +275,10 @@
     <div id="map"></div>
 
       <!-- Map-JavaScript -->
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>        
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNuAJJC68U4JAccobv3RUQEtQOm7JFAIg&callback=initMap" async defer"></script>        
       <script type="text/javascript">
         google.maps.event.addDomListener(window, 'load', init);
-        function init() {
+        function initMap() {
           var mapOptions = {
             zoom: 11,
             center: new google.maps.LatLng(28.6139, 77.2090),
